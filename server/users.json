@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "100",
+      "fname": "sony",
+      "lname": "sowmya",
+      "ename": "abc@gmail.com",
+      "psw": "sowmya",
+      "phno": "798217"
+    },
+    {
+      "id": "101",
+      "fname": "sowmya",
+      "lname": "sony",
+      "ename": "sony@gmail.com",
+      "psw": "sony",
+      "phno": "8499920"
+    },
+    {
+      "id": "102",
+      "fname": "chitluri",
+      "lname": "varsha",
+      "ename": "varsha@gmail.com",
+      "psw": "varsha",
+      "phno": "7429740"
+    },
+    {
+      "id": "222",
+      "fname": "www",
+      "lname": "yutuyu",
+      "ename": "jhbb",
+      "psw": "vjhjb",
+      "phno": "7687898"
+    }
+  ]
+}

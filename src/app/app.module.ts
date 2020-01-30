@@ -10,6 +10,14 @@ import { ImportComponent } from './admin/import/import.component';
 import { ManagecompanyComponent } from './admin/managecompany/managecompany.component';
 import { ManageExchangeComponent } from './admin/manage-exchange/manage-exchange.component';
 import { UpdateIPOComponent } from './admin/update-ipo/update-ipo.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './update/user/user.component';
+// import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
+// import { ImportDtaComponent } from './import-dta/import-dta.component';
+// import { ManagecomapanyComponent } from './managecomapany/managecomapany.component';
+// import { ManageexchangeComponent } from './manageexchange/manageexchange.component';
+// import { UpdateipodetailsComponent } from './updateipodetails/updateipodetails.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +28,22 @@ import { UpdateIPOComponent } from './admin/update-ipo/update-ipo.component';
     ImportComponent,
     ManagecompanyComponent,
     ManageExchangeComponent,
-    UpdateIPOComponent
+    UpdateIPOComponent,
+    UsersComponent,
+    UserComponent
+    // AdminHomePageComponent,
+    // ImportDtaComponent,
+    // ManagecomapanyComponent,
+    // ManageexchangeComponent,
+    // UpdateipodetailsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
