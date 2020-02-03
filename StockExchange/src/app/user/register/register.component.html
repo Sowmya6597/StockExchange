@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">SIGNUP</h1><br>
+        <form [formGroup]="signupuser" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+          <label for="id"><b class="text-primary">ID</b></label><br>
+          <input type="number" 
+          formControlName="id"
+          class="form-control"
+           placeholder="Enter ID"
+           name="id" required><br>
+      </div>
+          <div class="form-group">
+            <label for="fname"><b class="text-primary">FirstName</b></label><br>
+            <input type="text" 
+            formControlName="fname"
+            class="form-control"
+             placeholder="Enter FirstName"
+             name="fname" required><br>
+        </div>
+        <div class="form-group">
+          <label for="lname"><b class="text-primary">LastName</b></label><br>
+          <input type="text" 
+          formControlName="lname"
+          class="form-control"
+           placeholder="Enter LastName"
+           name="lname" required><br>
+      </div>
+          <div class="form-group">
+                <label for="ename"><b class="text-primary">EmailId</b></label><br>
+                <input type="text" 
+                formControlName="ename"
+                class="form-control"
+                 placeholder="Enter Emailid"
+                 name="ename" required><br>
+            </div>
+            <div class="form-group">
+                <label for="password"><b class="text-primary">Password</b></label><br>
+                <input type="password"
+                formControlName="password"
+                class="form-control" 
+                placeholder="Enter Password"
+                name="password" required><br>
+            </div>
+            <div class="form-group">
+                <label for="repeatpassword"><b class="text-primary">Reenter-Password</b></label><br>
+                <input type="password"
+                formControlName="repeatpassword"
+                class="form-control" 
+                placeholder="renter Password"
+                name="repeatpassword" required><br>
+            </div>
+            <div class="form-group">
+              <label for="phone"><b class="text-primary">PhoneNumber</b></label><br>
+              <input type="number" 
+              formControlName="phone"
+              class="form-control"
+               placeholder="Enter PhoneNumber"
+               name="phone" required><br>
+          </div>
+            <a>Forgot </a><a href="#">password?</a><br><br>
+            <button class="btn btn-success"
+            (click)="addUser()" [disabled]="!signupuser.valid">SIGNUP</button>
+            <button type="button" class="btn btn-dnger">CANCEL</button>
+            
+           
+
+        </form>
+    </div>
+</body>
+</html>

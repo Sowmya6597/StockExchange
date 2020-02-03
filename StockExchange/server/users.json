@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "101",
+      "fname": "sowmya",
+      "lname": "sony",
+      "ename": "sony3333@gmail.com",
+      "password": "sony",
+      "repeatpassword": "sony",
+      "phone": "8499920"
+    },
+    {
+      "id": "102",
+      "fname": "chitluri",
+      "lname": "varsha",
+      "ename": "varshasowmya@gmail.com",
+      "password": "varsha",
+      "repeatpassword": "varsha",
+      "phone": "7429740"
+    },
+    {
+      "id": "222",
+      "fname": "prasuna",
+      "lname": "inter",
+      "ename": "prasuna123@gmail.com",
+      "password": "vjhjb",
+      "repeatpassword": "vjhjb",
+      "phone": "7687898"
+    }
+  ]
+}

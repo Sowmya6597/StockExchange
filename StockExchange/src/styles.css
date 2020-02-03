@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body
+{
+  width:100%;
+  min-height:100vh;
+  background: url("https://st4.depositphotos.com/9429742/20418/i/1600/depositphotos_204180988-stock-photo-stock-market-chart-on-forex.jpg");
+  background-size: cover;
+}
