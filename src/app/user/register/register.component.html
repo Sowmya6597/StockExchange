@@ -8,7 +8,7 @@
         <form [formGroup]="signupuser" (ngSubmit)="onSubmit()">
           <div class="form-group">
           <label for="id"><b class="text-primary">ID</b></label><br>
-          <input type="text" 
+          <input type="number" 
           formControlName="id"
           class="form-control"
            placeholder="Enter ID"
@@ -39,25 +39,35 @@
                  name="ename" required><br>
             </div>
             <div class="form-group">
-                <label for="psw"><b class="text-primary">Password</b></label><br>
+                <label for="password"><b class="text-primary">Password</b></label><br>
                 <input type="password"
-                formControlName="psw"
+                formControlName="password"
                 class="form-control" 
                 placeholder="Enter Password"
-                name="psw" required><br>
+                name="password" required><br>
             </div>
             <div class="form-group">
-              <label for="phno"><b class="text-primary">PhoneNumber</b></label><br>
-              <input type="text" 
-              formControlName="phno"
+                <label for="repeatpassword"><b class="text-primary">Reenter-Password</b></label><br>
+                <input type="password"
+                formControlName="repeatpassword"
+                class="form-control" 
+                placeholder="renter Password"
+                name="repeatpassword" required><br>
+            </div>
+            <div class="form-group">
+              <label for="phone"><b class="text-primary">PhoneNumber</b></label><br>
+              <input type="number" 
+              formControlName="phone"
               class="form-control"
                placeholder="Enter PhoneNumber"
-               name="phno" required><br>
+               name="phone" required><br>
           </div>
             <a>Forgot </a><a href="#">password?</a><br><br>
-            <button class="btb btn-success"
+            <button class="btn btn-success"
             (click)="addUser()" [disabled]="!signupuser.valid">SIGNUP</button>
-            <button type="button" class="btn btn-danger">CANCEL</button>
+            <button type="button" class="btn btn-dnger">CANCEL</button>
+            
+           
 
         </form>
     </div>

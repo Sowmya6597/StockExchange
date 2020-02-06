@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">ADD COMPANY</h1><br>
+        <form [formGroup]="addcompany" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+          <label for="sector"><b class="text-primary">Sector</b></label><br>
+          <input type="text" 
+          formControlName="sector"
+          class="form-control"
+           placeholder="Enter Sector Name"
+           name="sector" required><br>
+      </div>
+          <div class="form-group">
+            <label for="companyname"><b class="text-primary">companyName</b></label><br>
+            <input type="text" 
+            formControlName="companyname"
+            class="form-control"
+             placeholder="Enter CompanyName"
+             name="companyname" required><br>
+        </div>
+        <div class="form-group">
+          <label for="ceo"><b class="text-primary">CEO</b></label><br>
+          <input type="text" 
+          formControlName="ceo"
+          class="form-control"
+           placeholder="Enter CEOName"
+           name="ceo" required><br>
+      </div>
+          <div class="form-group">
+                <label for="bod"><b class="text-primary">BoardOfDirectors</b></label><br>
+                <input type="text" 
+                formControlName="bod"
+                class="form-control"
+                 placeholder="Enter BOD"
+                 name="bod" required><br>
+            </div>
+            <div class="form-group">
+                <label for="turnover"><b class="text-primary">TurnOver</b></label><br>
+                <input type="number"
+                formControlName="turnover"
+                class="form-control" 
+                placeholder="Enter TurnOver"
+                name="turnover" required><br>
+            </div>
+            <button class="btn btn-success"
+            (click)="addCompany()" [disabled]="!addcompany.valid">ADD COMPANY</button>
+            <button type="button" class="btn btn-dnger">CANCEL</button>
+             </form>
+    </div>
+</body>
+</html>

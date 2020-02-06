@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand" >
+    <div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="IPO"class="nav-link"><button class="btn btn-outline-primary"> IPO</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="comparecompany" src=""class="nav-link" ><button class="btn btn-outline-primary"> Compare Company</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="comparesector" class="nav-link"><button class="btn btn-outline-primary">Compare Sector</button></a>
+            </li>
+            </ul>
+    </div>
+</nav>
+<div id="body" class="container mt-5">
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form [formGroup]='comparecompany' class="form-group border p-5 border-curved mt-5" >
+        <p class="h1 text-muted text-uppercase text-center mb-4">Compare Sector</p>
+     
+        <label for="Sector"> Select Sector:</label>
+        <select class="form-control " id="role">
+            <option>CTS<a href="Medical"></a></option>
+            <option>TCS<a href="IT"></a></option>
+            <option>WIPRO<a href="Banking"></a></option>
+          </select>
+        <label for="select stock exchange">Select Stock Exchange:</label>
+       <select class="form-control " id="role">
+            <option>BSE<a href="BSE"></a></option>
+            <option>NSE<a href="NSE"></a></option>
+          </select>
+          <br>
+          <label for="datetime">From Date-Time:</label><br>
+            <input class="form-control" type="datetime-local" name="datetime" id="datetime" formControlName="datetime">
+            <label for="datetime">TO Date-Time:</label><br>
+            <input class="form-control" type="datetime-local" name="datetime" id="datetime" formControlName="datetime">
+            <label for="sectorname">Sector Name:</label>
+            <input type="text" class="form-control" placeholder="Name of Sector" formContrlName="sectorname" id="sectorname"><br>
+            <button class="btn btn-success form-control" (click)="GenerateMap()" [disabled]="!GenerateMap.valid">GENERATE MAP</button>
+      </form>
+    </div>
+</div>
+</div>

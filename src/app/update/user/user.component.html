@@ -6,13 +6,13 @@
     <div class="container">
         <h1 class="text-center">SIGNUP</h1><br>
         <form [formGroup]="updateuser" (ngSubmit)="onSubmit()">
-          <div class="form-group">
-          <label for="id"><b class="text-primary">ID</b></label><br>
-          <input type="text" 
-          formControlName="id"
-          class="form-control"
+           <div class="form-group">
+           <label for="id"><b class="text-primary">ID</b></label><br>
+           <input type="number" 
+           formControlName="id"
+           class="form-control"
            placeholder="Enter ID"
-           name="id" required><br>
+           name="id" disabled/><br>
       </div>
           <div class="form-group">
             <label for="fname"><b class="text-primary">FirstName</b></label><br>
@@ -20,7 +20,7 @@
             formControlName="fname"
             class="form-control"
              placeholder="Enter FirstName"
-             name="fname" required><br>
+             name="fname" ><br>
         </div>
         <div class="form-group">
           <label for="lname"><b class="text-primary">LastName</b></label><br>
@@ -28,7 +28,7 @@
           formControlName="lname"
           class="form-control"
            placeholder="Enter LastName"
-           name="lname" required><br>
+           name="lname" ><br>
       </div>
           <div class="form-group">
                 <label for="ename"><b class="text-primary">EmailId</b></label><br>
@@ -36,30 +36,36 @@
                 formControlName="ename"
                 class="form-control"
                  placeholder="Enter Emailid"
-                 name="ename" required><br>
+                 name="ename" ><br>
             </div>
             <div class="form-group">
-                <label for="psw"><b class="text-primary">Password</b></label><br>
+                <label for="password"><b class="text-primary">Password</b></label><br>
                 <input type="password"
-                formControlName="psw"
+                formControlName="password"
                 class="form-control" 
                 placeholder="Enter Password"
-                name="psw" required><br>
+                name="password" ><br>
             </div>
             <div class="form-group">
-              <label for="phno"><b class="text-primary">PhoneNumber</b></label><br>
-              <input type="text" 
-              formControlName="phno"
+                <label for="repeatpassword"><b class="text-primary">Reenter-Password</b></label><br>
+                <input type="password"
+                formControlName="repeatpassword"
+                class="form-control" 
+                placeholder="Enter Password"
+                name="repeatpassword" ><br>
+            </div>
+            <div class="form-group">
+              <label for="phone"><b class="text-primary">PhoneNumber</b></label><br>
+              <input type="number" 
+              formControlName="phone"
               class="form-control"
                placeholder="Enter PhoneNumber"
-               name="phno" required><br>
+               name="phone" ><br>
           </div>
-            <a>Forgot </a><a href="#">password?</a><br><br>
-            <button class="btb btn-success"
-            (click)="updateUser()" [disabled]="!updateuser.valid">SIGNUP</button>
-            <button type="button" class="btn btn-danger">CANCEL</button>
-
-        </form>
+          <button class="btn btn-success"
+            (click)="updateUser()" [disabled]="!updateuser.valid">UPDATE</button>
+            <button type="button" class="btn btn-success">CANCEL</button>
+                    </form>
     </div>
 </body>
 </html>

@@ -8,5 +8,5 @@ import {User} from './models/user';
 })
 export class AppComponent {
   title = 'StockExchange';
-  user=new User(100,'sony','abc@gmail.com',9912899281);
+  //user=new User(100,'sony','abc@gmail.com',9912899281);
 }

@@ -12,12 +12,13 @@ export class UserComponent implements OnInit {
   constructor(private formBuilder:FormBuilder, private userService:UserService,private router:Router) { }
   ngOnInit() {
     this.updateuser=this.formBuilder.group({
-      id:['',[Validators.required]],
-      fname:['',[Validators.required]],
-      lname:['',[Validators.required]],
-      ename:['',Validators.required,Validators.email],
-      psw:['',Validators.required],
-      phno:['',Validators.required]
+      id:[],
+      fname:['',Validators.required],
+      lname:['',Validators.required],
+      ename:['',[Validators.required,Validators.email]],
+      password:['',Validators.required],
+      repeatpassword:['',Validators.required],
+      phone:['',Validators.required],
     });
   const id = localStorage.getItem('userId');
   if (+id > 0) {
