@@ -1,0 +1,62 @@
+
+<!-- <nav class="navbar navbar-expand" >
+    <div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="import"class="nav-link"><button class="btn btn-outline-primary"> Import Data</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="companydetails" src=""class="nav-link" ><button class="btn btn-outline-primary"> Company Details</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="stockexchangedetails" class="nav-link"><button class="btn btn-outline-primary">Stock Exchange Details</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="updateipo" class="nav-link"><button class="btn btn-outline-primary">Update IPO</button></a>
+            </li>
+            <a routerLink ="company"></a>
+        </ul>
+    </div>
+</nav> -->
+<section>
+    <div class="container">
+  
+      <div class="card bg-light w-50 h-100 mt-5 ">
+        <div class="card-body">
+          <h2> Ipo Of Company</h2>
+          <form [formGroup]="updatestockForm" (ngSubmit)="updateStockExchange()">
+            <div class="form-group">
+              <label for="id">Id</label>
+              <input type="text" class="form-control" id="id" formControlName="id"
+                placeholder="Enter Id" name="id">
+            </div>
+            <div class="form-group">
+              <label for="Stock">Stock Exchange</label>
+              <input type="text" class="form-control" id="stock" formControlName="stock"
+                placeholder="Enter Stock Exchange" name="stock">
+            </div>
+            <div class="form-group">
+                <label for="remarks">Brief </label>
+                <textarea class="form-control" id="brief" formControlName="brief" placeholder="Brief Information about Stock Exchange"
+                  rows="2" name="brief"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="address">Contact Address</label>
+                <textarea class="form-control" id="address" formControlName="address" placeholder="Enter Contact Address"
+                  rows="2" name="address"></textarea>
+              </div>
+            
+         
+            <div class="form-group">
+              <label for="remarks">Remakrs</label>
+              <textarea class="form-control" id="remarks" formControlName="remarks" placeholder="Remarks If any"
+                rows="2" name="remarks"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Update StockExchange</button>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+

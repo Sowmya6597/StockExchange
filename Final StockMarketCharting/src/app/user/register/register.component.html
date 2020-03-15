@@ -1,0 +1,36 @@
+<section id="intro">
+    <div class="container">
+
+      <div class="card card-responsive w-50 h-100 bg-light mt-5 " >
+        <div class="card-body">
+          <h2>Create an account</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="addUser()">
+      <div class="form-group">
+        <label for="name">Id:</label>
+        <input type="text" class="form-control" id="id" formControlName="id"  placeholder="Enter Id" name="id">
+      </div>
+      <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" formControlName="name"  placeholder="Enter Name" name="name">
+        </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" formControlName="password" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="form-group">
+          <label for="confirmpassword">Confirm Password:</label>
+          <input type="password" class="form-control" id="confirmpassword" formControlName="confirmpassword" placeholder="Renter password" name="cpwd">
+        </div>
+      <button type="submit" class="btn btn-info">Sign Up</button>
+      
+    </form>
+      </div>  
+    </div>
+  </div>
+  
+</section>
+

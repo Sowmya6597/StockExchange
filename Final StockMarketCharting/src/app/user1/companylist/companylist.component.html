@@ -1,0 +1,38 @@
+<table class="table">
+    <div class="table-responsive">
+    <tr>
+        <th>ID</th>
+        <th>Company name</th>
+        <th>Turnover</th>
+        <th>CEO</th>
+        <th>Board of Directors</th>
+        <th>Listed in Stock Exchange</th>
+        <th>Sector</th>
+        <th>About Company</th>
+        <th>Stock Code</th>
+        
+    </tr>
+    <tr *ngFor="let company of companies">
+        <td>{{company.id}}</td>
+        <td>{{company.companyname}}</td>
+        <td>{{company.turnover}}</td>
+        <td>{{company.ceo}}</td>
+        <td>{{company.bod}}</td>
+        <td>{{company.lse}}</td>
+        <td>{{company.sector}}</td>
+        <td>{{company.boc}}</td>
+        <td>{{company.stock}}</td>
+    </tr>
+    </div>
+    
+</table>
+
+<section id="intro"  >
+    <div class="intro-c ">
+        <div class="text-center">
+      <a routerLink="/userhomepage" class="btn-get-startedd scrollto  ">Back</a>
+       </div>
+    </div>
+  </section>
+
+

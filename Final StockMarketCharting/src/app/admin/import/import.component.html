@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    <div class="row">
+    <!-- <div class="col-md-3 mt-5">
+      <ul class="list-group text-center w-100">
+            <li class="list-group-item">
+              <a  routerLink="/users"><b>UserDetails</b></a>
+            </li>
+             <li class="list-group-item">
+              <a  routerLink="/import-dta"><b>ImportData</b></a>
+            </li> 
+            <li class="list-group-item">
+              <a  routerLink="/create-new-company"><b>CreateNewCompany</b></a>
+            </li> 
+            <li class="list-group-item">
+              <a  routerLink="/managecompany"><b>ManageCompany</b></a>
+            </li>
+               <li class="list-group-item">
+                <a  routerLink="/stockexchange"><b>StockExchange</b></a>
+              </li>
+              <li class="list-group-item">
+                <a  routerLink="/manageexchange"><b>ManageExchange</b></a>
+              </li>
+              <li class="list-group-item">
+                <a  routerLink="/home"><b>Logout</b></a>
+              </li>
+            </ul>
+    </div> -->
+    <nav class="navbar navbar-expand" >
+      <div>
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a routerLink="/import"class="nav-link"><button class="btn btn-outline-secondary"> IMPORT DATA</button></a>
+              </li>
+              <li class="nav-item active">
+                  <a routerLink="/addCompany" src=""class="nav-link" ><button class="btn btn-outline-secondary"> CREATE COMPANY</button></a>
+              </li>
+              <li class="nav-item active">
+                  <a routerLink="/company" class="nav-link"><button class="btn btn-outline-secondary">MANAGE COMPANY</button></a>
+              </li>
+              <li class="nav-item active">
+                  <a routerLink="/ipo" class="nav-link"><button class="btn btn-outline-secondary">IPO</button></a>
+              </li>
+              <li class="nav-item active">
+                  <a routerLink="/manageipo" class="nav-link"><button class="btn btn-outline-secondary">MANAGE IPO</button></a>
+              </li>
+              <li class="nav-item active">
+                  <a routerLink="/stockexchangedetails" class="nav-link"><button class="btn btn-outline-secondary">STOCK EXCHANGE</button></a>
+              </li>
+              
+              <li class="nav-item active">
+                <a routerLink="/users" class="nav-link"><button class="btn btn-outline-secondary">USERS LIST</button></a>
+            </li>
+            <li class="nav-item active">
+              <a routerLink="/stockexchange" class="nav-link"><button class="btn btn-outline-secondary">MANAGE STOCKEXCHANGE</button></a>
+          </li>
+          </ul>
+      </div>
+    </nav>
+    
+    <div class="col-md-9 mt-5">
+      <h3 class="text-center">ImportData</h3>
+        <div class="card card-responsive mt-5 w-75 h-100 bg-white" >
+          <div class="card-body">
+        <form (ngSubmit)="uploadData()">
+          <div class="form-group">
+            <label for="upload excel file"><h4 class="text-danger">Upload Excel File</h4></label>
+            <input type="file" class="form-control mt-5" (change)="onFileChange($event)"
+             id="excel" placeholder="Enter Excel File" name="excel">
+          </div>
+         <button type="submit" class="btn btn-success mt-5">Upload</button>&nbsp;&nbsp;&nbsp;
+         <button type="submit" class="btn btn-danger mt-5" routerLink="/landing">Cancel</button>
+        </form>
+        </div>
+      </div>
+      </div>
+      </div>
+  </div>

@@ -1,0 +1,112 @@
+<!-- <nav class="navbar navbar-expand" >
+    <div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="IPO"class="nav-link"><button class="btn btn-outline-primary"> IPO</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="comparecompany" src=""class="nav-link" ><button class="btn btn-outline-primary"> Compare Company</button></a>
+            </li>
+            <li class="nav-item">
+                <a href="comparesector" class="nav-link"><button class="btn btn-outline-primary">Compare Sector</button></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="body" class="container mt-5">
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <form [formGroup]='comparecompany' class="form-group border p-5 border-curved mt-5" >
+        <p class="h1 text-muted text-uppercase text-center mb-4">Compare Company</p>
+     
+        <label for="company"> Select Company:</label>
+        <select class="form-control " id="role">
+            <option>CTS<a href="CTS"></a></option>
+            <option>TCS<a href="TCS"></a></option>
+            <option>WIPRO<a href="WIPRO"></a></option>
+          </select>
+        <label for="se">Select Stock Exchange:</label>
+       <select class="form-control " id="role">
+            <option>BSE<a href="BSE"></a></option>
+            <option>NSE<a href="NSE"></a></option>
+          </select>
+          <br>
+          <label for="fd">From Date-Time:</label><br>
+            <input class="form-control" type="datetime-local" name="datetime" id="datetime" formControlName="datetime">
+            <label for="td">TO Date-Time:</label><br>
+            <input class="form-control" type="datetime-local" name="datetime" id="datetime" formControlName="datetime">
+            <label for="name">Company Name:</label>
+            <input type="text" class="form-control" placeholder="Name of Company" formContrlName="companyname" id="companyname"><br>
+            <button class="btn btn-success form-control" (click)="GenerateMap()" [disabled]="!GenerateMap.valid">GENERATE MAP</button>
+      </form>
+    </div>
+</div>
+</div> -->
+
+
+
+<section id="intro">
+    <div class="container">
+      <div class="card bg-light w-52 h-100 mt-5 ">
+        <div class="card-body">
+          <h2>Comparison Charts</h2>
+          <form [formGroup]="compareCompany" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="Select Company/Sector">Select Company/Sector</label>
+                <select class="form-control" id="Select" formControlName="csselect" name="csselect">
+                  <option>Company</option>
+                  <option>Sector</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Select stock exchange">Select Stock Exchange</label>
+                <select class="form-control" id="Select" formControlName="seselect" name="seselect">
+                  <option>NSE</option>
+                  <option>BSE</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="company name/sector name">Company Name/Sector Name</label>
+              <select  class="form-control" id="cnsn" formControlName="cnsn" placeholder="Enter company(or) sector name"
+                name="cnsn" >
+                <option value=""selected disabled >Select Company</option>
+                <option *ngFor="let company of companies"
+                [value]="">
+              {{company.companyCode}}</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="company name/sector name">Company Name/Sector Name Compare To</label>
+                <select class="form-control" id="ctcnsn" formControlName="ctcnsn" placeholder="Enter company(or) sector name Compare To"
+                  name="ctcnsn" >
+                  <option value="" selected disabled >Select Company</option>
+                <option *ngFor="let company of companies"
+                [value]="">
+              {{company.companyCode}}</option>
+                </select>
+              </div>
+            <div class="form-group row">
+                <label for="from period" class="col-2 col-form-label">From Period</label>
+                <div class="col-10">
+                  <input class="form-control" type="date" value="" id="fperiod" formControlName="fperiod"  name="fperiod">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="from period" class="col-2 col-form-label">To Period</label>
+                <div class="col-10">
+                  <input class="form-control" type="date" value="" id="tperiod" formControlName="tperiod"  name="fperiod">
+                </div>
+            </div>
+            <!-- <button type="submit" class="btn btn-info">Genrate Map</button> -->
+            <div class="intro-c ">
+                  <div class="text-center">
+                    <button class="btn btn-danger" type="submit" >Generate</button>
+            
+                 </div>
+              </div>
+             </form>
+        </div>
+      </div>
+    </div>
+  </section>

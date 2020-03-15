@@ -1,0 +1,166 @@
+<!-- <div id="body" class="container mt-5">
+    <div class="row mb-5">
+        <div class="col-6 my-3">
+            
+            <div class="card my-card border border-curved text-center" onclick="location.routerLink='IPOS'">
+                
+                <div class="card-body">
+                    <h4 class="card-title display-6">IPOS</h4>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="col-6 my-3">
+            
+            <div class="card my-card border border-curved text-center" onclick="location.routerLink='comparecompany'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">Compare Company</h4>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-6 my-3">
+            
+            <div class="card my-card border border-curved text-center" onclick="location.routerLink='comparesector'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">Compare Sector</h4>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-6 my-3">
+            
+            <div class="card my-card border border-curved text-center" onclick="location.routerLink='iposlist'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">IPOS LIST</h4>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-6 my-3">
+            
+            <div class="card my-card border border-curved text-center" (click)="company()">
+                <div class="card-body">
+                    <h4 class="card-title display-6">COMPANY LIST</h4>
+                </div>
+            </div>
+            
+        </div>
+       </div>
+</div>  -->
+
+
+
+
+
+<section id="tm-section-1" class="row tm-section">
+    <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+        <div class="tm-white-curve-left-rec"></div>
+        <div class="tm-white-curve-left-circle"></div>
+        <div class="tm-white-curve-text">
+            <h2 class="tm-section-header blue-text">Ipos</h2>
+            <p>
+                An initial public offering (IPO) refers to the process of offering shares of a private corporation to the public in a new stock issuance. Public share issuance allows a company to raise capital from public investors. The transition from a private to a public company can be an important time for private investors to fully realize gains from their investment as it typically includes share premiums for current private investors. Meanwhile, it also allows public investors to participate in the offering.</p>
+            <p>
+                <button class="btn btn-danger" (click)="Ipo()" >View Ipos</button>
+            </p>     
+        </div>                        
+    </div>
+    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+        <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/ujjivan_small_finance_bank_ipo_660_021219095538_021219095805.jpg" alt="Image" class="img-fluid tm-img>" alt="Image" class="img-fluid tm-img">
+    </div>
+</section> 
+<section id="tm-section-2" class="row tm-section">
+    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+        <img src="https://www.slideteam.net/media/catalog/product/cache/960x720/c/o/comparing_2_companies_management_of_business_statistics_ppt_slides_Slide01.jpg" alt="Image" class="img-fluid tm-img">
+    </div>
+    <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+        <div class="tm-white-curve-right-circle"></div>
+        <div class="tm-white-curve-right-rec"></div>
+        <div class="tm-white-curve-text">
+            <h2 class="tm-section-header red-text">Compare Companies</h2>
+            <p>We perform comparisons of
+                a single company over different periods of time,
+            	two different companies over a specific period,
+                a single sector over different periods of time
+                different sectors over a specific period,
+                between a  company over a specific period of time,
+                able to select if comparisons need to be displayed in a single chart,
+                use different colors when multiple Companies are displayed in a single chart and display legend.
+                </p>    
+            <p>
+                <button class="btn btn-danger" (click)="compareCompany()" >Compare Company</button>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="tm-section-3" class="row tm-section">
+    <div class="tm-white-curve-left col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+        <div class="tm-white-curve-left-rec">
+        </div>
+        <div class="tm-white-curve-left-circle">
+        </div>
+        <div class="tm-white-curve-text">
+            <h2 class="tm-section-header gray-text">Compare Sector</h2>
+            <p class="thin-font">
+                We perform comparisons of
+                a single sector over different periods of time,
+            	two different sectors over a specific period,
+                a single sector over different periods of time
+                different sectors over a specific period,
+                between a Sector  over a specific period of time,
+                able to select if comparisons need to be displayed in a single chart,
+                use different colors when multiple sectors are displayed in a single chart and display legend.
+                <p>
+                        <button class="btn btn-danger" (click)="compareSector()" >Compare Sector</button> &nbsp;
+                    
+                        </p>
+                </div>
+    </div>
+    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+        <img src="https://www.thebalance.com/thmb/oy8pswK9w9miZejuGoh9MiENzH0=/3708x2086/smart/filters:no_upscale()/StockMarketandEconomySectorsandIndustries-56d431c83df78cfb37d64b70.jpg" alt="Image" class="img-fluid tm-img">
+    </div>
+</section> 
+<section id="tm-section-2" class="row tm-section">
+    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+        <img src="https://cdn.geekwire.com/wp-content/uploads/2016/12/09-06Westlake_TerryBuilding_print.jpg" alt="Image" class="img-fluid tm-img">
+    </div>
+    <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+        <div class="tm-white-curve-right-circle"></div>
+        <div class="tm-white-curve-right-rec"></div>
+        <div class="tm-white-curve-text">
+            <h2 class="tm-section-header red-text">Company List</h2>
+            <p>We perform comparisons of
+                a single company over different periods of time,
+            	two different companies over a specific period,
+                a single sector over different periods of time
+                different sectors over a specific period,
+                between a  company over a specific period of time,
+                able to select if comparisons need to be displayed in a single chart,
+                use different colors when multiple Companies are displayed in a single chart and display legend.
+                </p>    
+            <p>
+                <button class="btn btn-danger" (click)="companyList()" >View Companies</button>
+            </p>
+        </div>
+    </div>
+</section>
+<section id="tm-section-5" class="row tm-section">
+    <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+        <div class="tm-white-curve-left-rec"></div>
+        <div class="tm-white-curve-left-circle"></div>
+        <div class="tm-white-curve-text">
+            <h2 class="tm-section-header blue-text">User Profile</h2>
+            <p>
+                Here in  this field we can view the details of the a particular user who currently logged into the site.We can view their basic information like registration id,name,Email Id and contact details.
+               </p>
+            <p>
+                <button class="btn btn-danger" (click)="profile()" >View User Profile</button>
+            </p>     
+        </div>                        
+    </div>
+    <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+        <img src="https://cdn3.iconfinder.com/data/icons/vector-icons-6/96/256-512.png" alt="Image" class="img-fluid tm-img>" alt="Image" class="img-fluid tm-img">
+    </div>
+</section>

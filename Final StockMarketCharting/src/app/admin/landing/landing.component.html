@@ -1,0 +1,177 @@
+<!-- <div id="body" class="container mt-5">
+    <div class="row mb-5">
+        <div class="col-6 my-3 btn">
+            <div class="card  my-card border border-curved text-center" onclick="location.href='import'">
+                 <div class="card-body ">
+                    <h4 class="card-title display-6">Import Data</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-6 my-3 btn">
+             <div class="card my-card border border-curved text-center" onclick="location.href='addCompany'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">Create Company</h4>
+                </div>
+            </div>
+         </div>
+        
+         <div class="col-6 my-3 btn">
+            <div class=" card my-card border border-curved text-center" onclick="location.href='company'">
+               <div class="card-body">
+                   <h4 class="card-title display-6">Manage Company</h4>
+               </div>
+           </div>
+        </div>
+      
+        <div class="col-6 my-3 btn">
+            <div class=" card my-card border border-curved text-center" onclick="location.href='ipo'">
+               <div class="card-body">
+                   <h4 class="card-title display-6">IPO</h4>
+               </div>
+           </div>
+        </div>
+        
+        <div class="col-6 my-3 btn">
+             <div class=" card my-card border border-curved text-center" onclick="location.href='manageipo'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">Manage Ipo</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-6 my-3 btn">
+            <div class="card my-card border border-curved text-center" onclick="location.href='stockexchangedetails'">
+               <div class="card-body">
+                   <h4 class="card-title display-6">Stock Exchanges</h4>
+               </div>
+           </div>
+       </div>
+       
+        <div class="col-6 my-3 btn">
+            <div class=" card my-card border border-curved text-center" onclick="location.href='stockexchange'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">Manage StockExchange</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 my-3 btn">
+            <div class=" card my-card border border-curved text-center" onclick="location.href='users'">
+                <div class="card-body">
+                    <h4 class="card-title display-6">USERS LIST</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+               
+    <!-- #home -->
+    <section id="tm-section-1" class="row tm-section">
+        <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+            <div class="tm-white-curve-left-rec"></div>
+            <div class="tm-white-curve-left-circle"></div>
+            <div class="tm-white-curve-text">
+                <h2 class="tm-section-header blue-text">Import Data(Excel Format)</h2>
+                <p>
+                    Here data is imported(in Excel format), it's basically to feed stock price of a company at various points of time. While uploading Excel, we specify the Stock Exchange to which the uploaded data belong to.The company code, date ranges are appropriately checked here, if anydata will be over written.After successfully importing, data will get stored in the database and uploaded   Summary   will get  displayed   like   which   company,   StockExchange, how many records got imported, from and to date range, etc...
+
+                </p>
+                <p>
+                    <button class="btn btn-danger" (click)="importdata()" >Import Data</button>
+                </p>     
+            </div>                        
+        </div>
+        <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+            <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2019/04/6-ways-to-export-data-to-excel.png" alt="Image" class="img-fluid tm-img>" alt="Image" class="img-fluid tm-img">
+        </div>
+    </section> <!-- #home -->
+    <!-- #services -->
+    <section id="tm-section-2" class="row tm-section">
+        <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+            <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/ujjivan_small_finance_bank_ipo_660_021219095538_021219095805.jpg" alt="Image" class="img-fluid tm-img">
+        </div>
+        <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+            <div class="tm-white-curve-right-circle"></div>
+            <div class="tm-white-curve-right-rec"></div>
+            <div class="tm-white-curve-text">
+                <h2 class="tm-section-header red-text">IPO</h2>
+                <p>An initial public offering (IPO) refers to the process of offering shares of a private corporation to the public in a new stock issuance. Public share issuance allows a company to raise capital from public investors. The transition from a private to a public company can be an important time for private investors to fully realize gains from their investment as it typically includes share premiums for current private investors. Meanwhile, it also allows public investors to participate in the offering.</p>    
+                <p>
+                    <button class="btn btn-danger" (click)="ipo()" >Add Ipo</button>&nbsp;
+               
+                    <button class="btn btn-danger" (click)="ipos()" >View Ipos</button>
+                </p>
+            </div>
+        </div>
+    </section> <!-- #services -->
+    <!-- #about -->
+    <section id="tm-section-5" class="row tm-section">
+        <div class="tm-white-curve-left col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+            <div class="tm-white-curve-left-rec">
+            </div>
+            <div class="tm-white-curve-left-circle">
+            </div>
+            <div class="tm-white-curve-text">
+                <h2 class="tm-section-header gray-text">Manage Company</h2>
+                <p class="thin-font">
+                    	This feature adds a new company details with fields or edit an already existing Company details
+                    	Here we deactivate an already existing company and
+                    	update any IPO related data.If this feature is not implemented, we may use hard coded fixed records in database.</p>
+                        <p>
+                            <button class="btn btn-danger" (click)="companylist()" >Add Company</button> &nbsp;
+                        
+                            <button class="btn btn-danger" (click)="companylists()" >View Companies</button>
+                        </p>
+                    </div>
+        </div>
+        <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+            <img src="https://www.fundoodata.com/learning-center/wp-content/uploads/background-companies-4-1.jpg" alt="Image" class="img-fluid tm-img">
+        </div>
+    </section> 
+    <section id="tm-section-4" class="row tm-section">
+        <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+            <img src="https://www.jagranjosh.com/imported/images/E/Articles/Stock-Exchange-of-India.jpg" alt="Image" class="img-fluid tm-img">
+        </div>
+        <div class="tm-white-curve-right col-xs-12 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+            <div class="tm-white-curve-right-circle"></div>
+            <div class="tm-white-curve-right-rec"></div>
+            <div class="tm-white-curve-text">
+                <h2 class="tm-section-header red-text">StockExchanges</h2>
+                <p> A stock exchange is a marketplace where securities, such as stocks and bonds, are bought and sold. Bonds are typically traded Over-the-Counter (OTC), but some corporate bonds can be traded on stock exchanges. Stock exchanges allow companies to raise capital and investors to make informed decisions using real-time price information. Exchanges can be a physical location or an electronic trading platform. Though people are typically familiar with the image of the trading floor, many exchanges now use electronic trading</p>    
+                <p>
+                    <button class="btn btn-danger" (click)="stockexchangelist()" >Add Stock</button> &nbsp;
+               
+                    <button class="btn btn-danger" (click)="stockexchangelists()" >View Stocks</button>
+                </p>
+            </div>
+        </div>
+    </section> 
+    <section id="tm-section-3" class="row tm-section">
+        <div class="tm-white-curve-left col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
+            <div class="tm-white-curve-left-rec"></div>
+            <div class="tm-white-curve-left-circle"></div>
+            <div class="tm-white-curve-text">
+                <h2 class="tm-section-header blue-text">Users List</h2>
+                <p>
+                    Here in  this field we can view the list of the users registered.We can view their basic information like registration id,name,Email Id and contact details.
+                   </p>
+                <p>
+                    <button class="btn btn-danger" (click)="userslist()" >View Users</button>
+                </p>     
+            </div>                        
+        </div>
+        <div class="tm-flex-center col-xs-12 col-sm-6 col-md-6 col-lg-5 col-xl-6">
+            <img src="https://blog.sngine.com/wp-content/uploads/2019/12/group_user_actions.jpg" alt="Image" class="img-fluid tm-img>" alt="Image" class="img-fluid tm-img">
+        </div>
+    </section>
+    

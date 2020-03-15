@@ -1,0 +1,45 @@
+
+
+       <h3 class="text-center mt-5">List Of Users</h3>
+       <table class="table-responsive">
+           <div class="table table-bordered mt-5">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>
+            <button class="btn btn-danger" (click)="deleteUser(user.id)">Delete</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" (click)="updateUser(user)">Update</button></td>
+    </tr>
+    </div>
+</table>
+<section id="intro"  >
+    <div class="intro-c ">
+        <div class="text-center">
+            <a routerLink="/register" class="btn-get-started scrollto">Add User</a>
+            <a routerLink="/landing" class="btn-get-startedd scrollto  ">Back</a>
+         </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

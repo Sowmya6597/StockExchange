@@ -1,0 +1,70 @@
+<!-- 
+<nav class="navbar navbar-expand" >
+    <div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a routerLink="/import"class="nav-link"><button class="btn btn-outline-secondary"> IMPORT DATA</button></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/addCompany" src=""class="nav-link" ><button class="btn btn-outline-secondary"> CREATE COMPANY</button></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/company" class="nav-link"><button class="btn btn-outline-secondary">MANAGE COMPANY</button></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/ipo" class="nav-link"><button class="btn btn-outline-secondary">IPO</button></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/manageipo" class="nav-link"><button class="btn btn-outline-secondary">MANAGE IPO</button></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/stockexchangedetails" class="nav-link"><button class="btn btn-outline-secondary">STOCK EXCHANGE</button></a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="/stockexchange" class="nav-link"><button class="btn btn-outline-secondary">MANAGE STOCKEXCHANGE</button></a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+<h3 class="text-center mt-5">List Of Stocks</h3>
+<table class="table-responsive">
+    <div class="table table-bordered mt-5">
+    
+    <tr>
+        <th>ID</th>
+        <th>StockName</th>
+        <th>BRIEF</th>
+        <th>ADDRESS</th>
+        <th>REMARKS</th>
+        <th>ACTIONS</th>
+    </tr>
+    <tr *ngFor="let stock of stocks">
+        <td>{{stock.id}}</td>
+        <td>{{stock.stock}}</td>
+        <td>{{stock.brief}}</td>
+        <td>{{stock.address}}</td>
+        <td>{{stock.remarks}}</td>
+        <td>
+            <button class="btn btn-danger" (click)="deleteStockExchange(stock.id)">Delete</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-warning" (click)="updateStockExchange(stock)">Update</button></td>
+    </tr>
+</div>
+</table>
+
+<section id="intro"  >
+    <div class="intro-c ">
+        <div class="text-center">
+            <a routerLink="/stockexchangedetails" class="btn-get-started scrollto">Add Stock</a>
+            <a routerLink="/landing" class="btn-get-startedd scrollto  ">Back</a>
+         </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
